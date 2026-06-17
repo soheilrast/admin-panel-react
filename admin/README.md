@@ -1,16 +1,95 @@
-# React + Vite
+# Admin Dashboard – User Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based admin dashboard for managing users with login authentication and basic CRUD functionality.
 
-Currently, two official plugins are available:
+This project was built while practicing React and trying to simulate a real admin panel structure.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ What it does
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Login with token-based authentication
+* Protected dashboard routes
+* Add, edit, and delete users
+* Simple state-based data handling
+* Responsive UI for mobile and desktop
+* Basic session persistence using localStorage
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+
+* React.js
+* React Router
+* Tailwind CSS
+* JavaScript (ES6)
+* Fake API for users/auth
+* localStorage
+
+---
+
+📁 Project Structure
+src/
+ ├── components/      # Reusable UI components
+ ├── pages/           # Application pages
+ ├── hooks/           # Custom logic hooks
+ ├── services/        # API layer (requests & abstraction)
+ ├── layouts/        # Dashboard layout system
+ ├── guards/         # Protected routes
+ ├── constants/      # Static configs
+ ├── utils/          # Helper functions
+ ├── App.jsx         # Route configuration
+ └── main.jsx        # App entry point
+```
+
+---
+
+## 🔐 How auth works
+
+* User logs in with username/password
+* API returns a token
+* Token is saved in localStorage
+* Protected routes check token before rendering dashboard
+
+---
+
+## 👥 User management
+
+You can:
+
+* Create new users
+* Edit existing users
+* Delete users from the list
+
+Everything is handled on the frontend (no backend DB).
+
+---
+
+## 📦 Setup
+
+```bash id="s2"
+git clone https://github.com/soheilrast/admin-panel-react.git
+cd admin-panel-react
+npm install
+npm run dev
+```
+
+---
+
+## 📸 Screenshots
+
+* Login page
+* Dashboard
+* Users page
+
+---
+
+## 🧠 Note
+
+This project was mainly built for learning purposes, especially to understand how React projects are structured and how authentication and CRUD flows work in frontend apps.
+
+---
+
+## 👨‍💻 Author
+
+GitHub: [soheilrast](https://github.com/soheilrast)
