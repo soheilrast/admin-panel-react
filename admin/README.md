@@ -28,18 +28,18 @@ This project was built while practicing React and trying to simulate a real admi
 
 ---
 
-📁 Project Structure
+## 📁 Project structure
+
+```bash id="st1"
 src/
- ├── components/      # Reusable UI components
- ├── pages/           # Application pages
- ├── hooks/           # Custom logic hooks
- ├── services/        # API layer (requests & abstraction)
- ├── layouts/        # Dashboard layout system
- ├── guards/         # Protected routes
- ├── constants/      # Static configs
- ├── utils/          # Helper functions
- ├── App.jsx         # Route configuration
- └── main.jsx        # App entry point
+ ├── components
+ ├── pages
+ ├── hooks
+ ├── services
+ ├── layouts
+ ├── guards
+ ├── utils
+ └── App.jsx
 ```
 
 ---
@@ -93,3 +93,5 @@ This project was mainly built for learning purposes, especially to understand ho
 ## 👨‍💻 Author
 
 GitHub: [soheilrast](https://github.com/soheilrast)
+
+
